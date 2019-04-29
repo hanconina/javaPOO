@@ -1,4 +1,4 @@
-package poo.E01AppCuadrado;
+package poo.E01Cuadrado;
 
 /**
  * Utiliza la clase Cuadrado
