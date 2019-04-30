@@ -1,4 +1,4 @@
-package poo.E01Cuadrado;
+package poo.clases.E01Cuadrado;
 
 /**
  * Clase Cuadrado que representa una figura geométrica de cuatro lados iguales

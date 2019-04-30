@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo.E03Persona;
+package poo.clases.E03Persona;
 
 import java.util.Scanner;
-import poo.E02Fecha.CFecha;
+import poo.clases.E02Fecha.CFecha;
 
 /**
  *

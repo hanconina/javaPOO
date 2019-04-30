@@ -1,4 +1,4 @@
-package poo.E03Paralelogramo;
+package poo.clases.E03Paralelogramo;
 
 /**
  *
