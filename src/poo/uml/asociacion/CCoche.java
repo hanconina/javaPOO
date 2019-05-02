@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo.clases.E03Persona;
+package poo.uml.asociacion;
 
 import java.util.LinkedList;
 import java.util.Scanner;
