@@ -22,8 +22,8 @@ public class Punto {
     }
     public double distanciaAlOrigen(){
         return Math.sqrt(x*x+y*y);
-    }
-    
+    }  
+        
     @Override
     public String toString(){
         return "(x,y) = "+"("+x+","+y+")";
