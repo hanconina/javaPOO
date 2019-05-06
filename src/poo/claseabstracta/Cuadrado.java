@@ -1,4 +1,4 @@
-package poo.herencia.claseabstracta;
+package poo.claseabstracta;
 
 public class Cuadrado extends Forma {
     private double lado;

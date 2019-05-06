@@ -1,5 +1,5 @@
 
-package poo.herencia.claseabstracta;
+package poo.claseabstracta;
 
 public class Rectangulo extends Forma{
     private double lado1;

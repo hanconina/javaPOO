@@ -1,4 +1,4 @@
-package poo.herencia.polimorfismo;
+package poo.polimorfismo;
 
 public class Persona {
     // ATRIBUTOS

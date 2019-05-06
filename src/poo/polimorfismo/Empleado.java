@@ -1,5 +1,5 @@
 
-package poo.herencia.polimorfismo;
+package poo.polimorfismo;
 
 public class Empleado extends Persona {
     private double sueldoBase;

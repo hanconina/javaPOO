@@ -1,5 +1,5 @@
 
-package poo.herencia.polimorfismo;
+package poo.polimorfismo;
 
 import java.util.LinkedList;
 
