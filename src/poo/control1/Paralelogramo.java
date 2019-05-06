@@ -4,7 +4,7 @@
  * son paralelos. Podemos representar un Paralelogramo con 
  * cuatro vértices que son pares ordenados (x,y)
  */
-package poo.clases.E03Paralelogramo;
+package poo.control1;
 
 /**
  *
