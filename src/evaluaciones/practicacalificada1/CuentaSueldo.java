@@ -1,5 +1,5 @@
 
-package poo.practica1;
+package evaluaciones.practicacalificada1;
 
 public class CuentaSueldo extends Cuenta{
     private String empresa;

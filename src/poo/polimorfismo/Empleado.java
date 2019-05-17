@@ -3,8 +3,8 @@ public class Empleado extends Persona {
     private double sueldoBase;
     public Empleado() {
     }
-    public Empleado(String nombres, double sueldoBase) {
-        super(nombres);
+    public Empleado(int dni, String nombres, double sueldoBase) {
+        super(dni,nombres);
         this.sueldoBase = sueldoBase;
     }
     public double recuperarSueldoBase(){

@@ -1,4 +1,4 @@
-package poo.control1;
+package evaluaciones.control1;
 
 /**
  *

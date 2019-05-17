@@ -1,4 +1,4 @@
-package poo.practica1;
+package evaluaciones.practicacalificada1;
 
 public class CuentaMancomunada extends Cuenta {
 

@@ -5,8 +5,8 @@ public class Estudiante extends Persona {
         super();
         carrera = "";
     }
-    public Estudiante(String nombres, String carrera) {
-        super(nombres);
+    public Estudiante(int dni, String nombres, String carrera) {
+        super(dni, nombres);
         this.carrera = carrera;
     }
     @Override
