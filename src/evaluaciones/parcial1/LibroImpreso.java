@@ -45,5 +45,10 @@ public class LibroImpreso extends Libro{
         double impuestoIGV = precioUnitario*0.18;
         return precioUnitario+precioArea+precioPeso+impuestoIGV;        
     }
+    @Override
+    public void mostrarLibro(){
+        super.mostrarLibro();
+        System.out.println("Ancho: "+ancho+" Largo: "+largo+" Peso: "+peso);
+    }
     
 }

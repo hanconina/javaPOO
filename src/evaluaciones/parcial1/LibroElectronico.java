@@ -35,5 +35,10 @@ public class LibroElectronico extends Libro{
         double impuestoIGV = precioUnitario*0.18;
         return precioUnitario+precioAdicional+impuestoIGV;
     }
+    @Override
+    public void mostrarLibro(){
+        super.mostrarLibro();
+        System.out.println("Formato: "+formato);
+    }
     
 }
