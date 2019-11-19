@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package iu.array;
+package iu.array.ordenar;
 
+import iu.array.*;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -16,6 +17,7 @@ import javax.swing.table.DefaultTableModel;
 public class RegistrarPersonaIU extends javax.swing.JFrame {
     // Atributos
     DefaultTableModel modeloTabla;
+    private GestionPersonas gestor;
 
     /**
      * Creates new form RegistrarPersonaIU
@@ -28,7 +30,27 @@ public class RegistrarPersonaIU extends javax.swing.JFrame {
         modeloTabla.addColumn("Ciudad");
         modeloTabla.addColumn("Sueldo");
         this.taTablaPersonas.setModel(modeloTabla);
-        
+        gestor = new GestionPersonas();        
+    }
+    
+    public void resgistrarPersonas(Persona persona){
+        this.gestor.adicionar(persona);
+    }
+    public void actualirVista(){
+        for (int i=0;i<gestor.longitud();i++){
+            Persona p = gestor.iesimo(i);            
+            Object[] fila = new Object[4];
+            fila[0]=p.getDni();
+            fila[1] = p.getNombres();
+            fila[2] = p.getCiudadNacimiento();
+            fila[3] = p.getSueldo();
+            modeloTabla.addRow(fila);
+        }
+    }
+    public void limpiarTabla(){
+        for (int i=modeloTabla.getRowCount()-1;i>=0;i--){
+            modeloTabla.removeRow(i);
+        }
     }
 
     /**
@@ -168,17 +190,14 @@ public class RegistrarPersonaIU extends javax.swing.JFrame {
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
         // TODO add your handling code here:
+        this.limpiarTabla();
         String DNI = this.txtDNI.getText();
         String nombres = this.txtNombres.getText();
         String ciudad = this.lstCiudades.getSelectedValue();
         String sueldo = this.txtSueldo.getText();
         Persona persona = new Persona(Integer.parseInt(DNI), nombres, ciudad, Double.parseDouble(sueldo));
-        Object[] fila = new Object[4];
-        fila[0]=persona.getDni();
-        fila[1]=persona.getNombres();
-        fila[2]=persona.getCiudadNacimiento();
-        fila[3]=persona.getSueldo();
-        modeloTabla.addRow(fila);
+        resgistrarPersonas(persona);
+        this.actualirVista();
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void btnEstadisticasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstadisticasActionPerformed
@@ -190,6 +209,7 @@ public class RegistrarPersonaIU extends javax.swing.JFrame {
         }
         String reporte = "Sueldo total: "+total;
         JOptionPane.showMessageDialog(rootPane, reporte);
+        
     }//GEN-LAST:event_btnEstadisticasActionPerformed
 
     /**
@@ -217,6 +237,7 @@ public class RegistrarPersonaIU extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(RegistrarPersonaIU.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
