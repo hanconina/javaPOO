@@ -1,4 +1,4 @@
-package poo.interfaces;
+package poo.interfaces.ejemplo.figuras;
 public class AppPruebaInterfaces {
     public static void main(String[] args){
         // Puedo utilizar una Interfaz con un Tipo

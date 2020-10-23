@@ -1,4 +1,4 @@
-package poo.interfaces;
+package poo.interfaces.ejemplo.figuras;
 public class Circulo implements IFigura {
     // ATRIBUTOS
     private double radio;

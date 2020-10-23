@@ -1,4 +1,4 @@
-package poo.interfaces;
+package poo.interfaces.ejemplo.figuras;
 public class Cuadrado implements IFigura{
     private double lado;
     public Cuadrado(double lado){

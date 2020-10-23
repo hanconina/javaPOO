@@ -1,4 +1,4 @@
-package poo.interfaces.equipofutbol;
+package poo.interfaces.ejemplo.equipofutbol;
 
 public interface IIntegranteSeleccionFutbol {
     public void concentrar();
